@@ -1,0 +1,11 @@
+structure (PersonFavoriteDrink) {
+  description (The favorite drink of a person)
+  property (personName) {
+    type (PersonName)
+    min (Required) max (One)
+  }
+  property (favoriteDrink) {
+    type (Drink)
+    min (Required) max (One)
+  }
+}

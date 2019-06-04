@@ -1,0 +1,5 @@
+dialog (Result) {
+  match: PersonFavoriteDrink (personFavoriteDrink)
+
+  template ("#{value(personFavoriteDrink.personName)} favorite drink is a #{value(personFavoriteDrink.favoriteDrink.name)}'")
+}

@@ -13,7 +13,14 @@ module.exports.function = function getFavoriteDrink (personName) {
       cacheTime: 0
     })
     
-    return response.drinks.map(mungeDrinks)
+    return response.drinks.map(function (drink) {
+      var drink = mungeDrinks(drink)
+      
+      return {
+        favoriteDrink: drink,
+        personName: personName
+      }
+    })
   }
   
   if (personName.startsWith('scott') || personName.startsWith('andy') || personName.startsWith('joe')) {
@@ -22,7 +29,16 @@ module.exports.function = function getFavoriteDrink (personName) {
       cacheTime: 0
     })
     
-    return response.drinks.map(mungeDrinks)
+    console.log(response)
+    
+    return response.drinks.map(function (drink) {
+      var drink = mungeDrinks(drink)
+      
+      return {
+        favoriteDrink: drink,
+        personName: personName
+      }
+    })
   }
   
   if (personName.startsWith('kelly')) {
@@ -31,7 +47,14 @@ module.exports.function = function getFavoriteDrink (personName) {
       cacheTime: 0
     })
     
-    return response.drinks.map(mungeDrinks)
+    return response.drinks.map(function (drink) {
+      var drink = mungeDrinks(drink)
+      
+      return {
+        favoriteDrink: drink,
+        personName: personName
+      }
+    })
   }
   
   if (personName.startsWith('adonis')) {
@@ -40,7 +63,14 @@ module.exports.function = function getFavoriteDrink (personName) {
       cacheTime: 0
     })
     
-    return response.drinks.map(mungeDrinks)
+    return response.drinks.map(function (drink) {
+      var drink = mungeDrinks(drink)
+      
+      return {
+        favoriteDrink: drink,
+        personName: personName
+      }
+    })
   }
   
   if (personName.startsWith('bruce')) {
@@ -49,7 +79,14 @@ module.exports.function = function getFavoriteDrink (personName) {
       cacheTime: 0
     })
 
-    return response.drinks.map(mungeDrinks)
+    return response.drinks.map(function (drink) {
+      var drink = mungeDrinks(drink)
+      
+      return {
+        favoriteDrink: drink,
+        personName: personName
+      }
+    })
   }
   
   if (personName.startsWith('jennifer')) {
@@ -58,7 +95,14 @@ module.exports.function = function getFavoriteDrink (personName) {
       cacheTime: 0
     })
 
-    return response.drinks.map(mungeDrinks)
+    return response.drinks.map(function (drink) {
+      var drink = mungeDrinks(drink)
+      
+      return {
+        favoriteDrink: drink,
+        personName: personName
+      }
+    })
   }
   
   if (personName.startsWith('brian')) {
@@ -67,7 +111,14 @@ module.exports.function = function getFavoriteDrink (personName) {
       cacheTime: 0
     })
 
-    return response.drinks.map(mungeDrinks)
+    return response.drinks.map(function (drink) {
+      var drink = mungeDrinks(drink)
+      
+      return {
+        favoriteDrink: drink,
+        personName: personName
+      }
+    })
   }
   
   // otherwise, do a random drink
@@ -76,5 +127,12 @@ module.exports.function = function getFavoriteDrink (personName) {
     cacheTime: 0
   })
 
-  return response.drinks.map(mungeDrinks)
+  return response.drinks.map(function (drink) {
+      var drink = mungeDrinks(drink)
+      
+      return {
+        favoriteDrink: drink,
+        personName: personName
+      }
+    })
 }

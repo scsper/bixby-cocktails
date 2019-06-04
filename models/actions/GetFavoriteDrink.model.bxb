@@ -7,5 +7,5 @@ action (GetFavoriteDrink) {
       min (Required) max (One)
     }
   }
-  output (Drink)
+  output (PersonFavoriteDrink)
 }
