@@ -2,8 +2,8 @@ dialog (Result) {
   match: Drink (drink)
 
   if (size(drink) > 1) {
-    template ("I found #{size(drink)} different drinks")
+    template ("I found #{size(drink)} different drinks with that name")
   } else {
-    template ("Here's one")
+    template ("Here's one that I found")
   }
 }
