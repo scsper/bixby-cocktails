@@ -1,0 +1,11 @@
+action (GetFavoriteDrink) {
+  type (Search)
+  description (Get the favorite drink for someone)
+  collect {
+    input (personName) {
+      type (PersonName)
+      min (Required) max (One)
+    }
+  }
+  output (Drink)
+}

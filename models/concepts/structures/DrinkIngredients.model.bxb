@@ -5,11 +5,11 @@ structure (DrinkIngredients) {
     min (Required) max (One)
   }
   property (measurement) {
-    type(DrinkMeasurement)
+    type (DrinkMeasurement)
     min (Optional) max (One)
   }
   property (fullIngredientDescription) {
-    type(FullIngredientDescription)
-    min(Required) max(One)
+    type (FullIngredientDescription)
+    min (Required) max(One)
   }
 }

@@ -6,6 +6,6 @@ module.exports.function = function findDrinks (drinkName) {
   var response = http.getUrl('https://www.thecocktaildb.com/api/json/v2/8673533/search.php?s=' + drinkName, {
     format: 'json'
   })
-
+  
   return response.drinks.map(mungeDrinks)
 }

@@ -8,11 +8,11 @@ module.exports = function (drink) {
     }
     
     ingredientsArr = ingredientsArr.filter(function (ingredient) {
-      return ingredient !== ''
+      return !!ingredient
     })
     
     measurementsArr = measurementsArr.filter(function (measurement) {
-      return measurement !== ''
+      return !!measurement
     })
     
     var ingredients = []

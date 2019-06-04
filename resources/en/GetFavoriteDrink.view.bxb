@@ -1,0 +1,11 @@
+result-view {
+  match: Drink (drink) {
+    from-output: GetFavoriteDrink
+  }
+  
+  render {
+    layout-match (drink) {
+      mode (Details)
+    }  
+  }
+}
