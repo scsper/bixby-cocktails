@@ -1,0 +1,19 @@
+result-view {
+  match: Drink (drink) {
+    from-output: FindDrinks
+  }
+  
+  render {
+    list-of (drink) {
+      has-details (true)
+      
+      where-each (item) {
+        layout-macro (drink-image-card) {
+          param (drink) {
+            expression (item)
+          }
+        }
+      }
+    }
+  }
+}

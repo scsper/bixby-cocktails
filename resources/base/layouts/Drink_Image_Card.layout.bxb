@@ -1,0 +1,27 @@
+layout-macro-def (drink-image-card) {
+  params {
+    param (drink) {
+      type (Drink)
+      min (Required)
+      max (One)
+    }
+  }
+  
+  content {
+    image-card {
+      aspect-ratio (4:3)
+      image-url ("#{value(drink.thumbnail)}")
+      title-area {
+        halign (Start)
+        slot1 {
+          text {
+            value {
+              template ("#{value(drink.name)}")
+            }
+            style(Title_M)
+          }
+        }
+      }
+    }
+  }
+}
