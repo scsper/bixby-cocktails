@@ -1,0 +1,11 @@
+dialog (Result) {
+  match: Drink (drink) {
+    from-output: FindDrinksByIngredient
+  }
+
+  if (size(drink) > 1) {
+    template ("I found #{size(drink)} different drinks you can mixf or #{value(drink.name)}")
+  } else {
+    template ("Here's a drink you can mix")
+  }
+}
