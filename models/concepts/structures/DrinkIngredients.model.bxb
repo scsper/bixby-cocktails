@@ -8,4 +8,8 @@ structure (DrinkIngredients) {
     type(DrinkMeasurement)
     min (Optional) max (One)
   }
+  property (fullIngredientDescription) {
+    type(FullIngredientDescription)
+    min(Required) max(One)
+  }
 }

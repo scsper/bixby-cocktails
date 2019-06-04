@@ -1,0 +1,68 @@
+layout {
+  match: Drink (drink)
+  mode (Details)
+
+  content {
+    section {
+      content {
+        image-card {
+          aspect-ratio (4:3)
+          image-url ("#{value(drink.thumbnail)}")
+          title-area {
+            halign (Start)
+            slot1 {
+              text {
+                value {
+                  template ("#{value(drink.name)}")
+                }
+                style(Title_L)
+              }
+            }
+          }
+        }
+        
+        partitioned {
+          content {
+            title-area {
+              halign (Start)
+              slot1 {
+                text {
+                  style (Title_S)
+                  value(Ingredients)
+                }
+              }
+            }
+            for-each (drink.ingredients) {
+              as (ingredient) {
+                single-line {
+                  text {
+                    value("#{value(ingredient.fullIngredientDescription)}")
+                    style (Detail_M)
+                  }
+                }
+              }
+            }
+          }
+        }
+        
+        divider
+        
+        title-area {
+          slot1 {
+            text {
+              style(Title_S)
+              value(Instructions)
+            }
+          }
+        }
+        
+        paragraph {
+          value {
+            template ("#{value(drink.instructions)}")
+          }
+          style (Detail_M)
+        }
+      }
+    }
+  }
+}

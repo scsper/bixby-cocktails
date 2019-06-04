@@ -27,9 +27,16 @@ module.exports.function = function findDrinks (drinkName) {
     var ingredients = []
     
     for (var i = 0; i < ingredientsArr.length; i++) {
+      var fullIngredientDescription = ingredientsArr[i]
+
+      if (measurementsArr[i]) {
+        fullIngredientDescription = measurementsArr[i] + ' ' + ingredientsArr[i]
+      } 
+      
       ingredients.push({
         ingredient: ingredientsArr[i],
-        measurement: measurementsArr[i]
+        measurement: measurementsArr[i],
+        fullIngredientDescription: fullIngredientDescription
       })
     }
     
