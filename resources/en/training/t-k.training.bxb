@@ -1,0 +1,5 @@
+train (t-k1x01201kit5ttoxoa9xvvade) {
+  utterance ("[g:FindDrinks] Get me a (margarita)[v:DrinkName]")
+  plan (Y2BmUEkpKs3LTsxLAdOpRXpJmRVJlc75ydkliZk5xXouRZl52QyaBFS5ZealgFUWM2gQY6BfYm4qAxMDIxAzAElGBhCA8gE=)
+  last-modified (1559668071416)
+}

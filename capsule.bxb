@@ -1,5 +1,5 @@
 capsule {
-  id (playground.bixbyCocktails)
+  id (drunkanddrunker.bixbyCocktails)
   version (0.1.0)
   format (3)
   targets {
