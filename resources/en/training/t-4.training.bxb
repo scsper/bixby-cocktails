@@ -1,0 +1,5 @@
+train (t-4bc5czx86f6cy52np6lpnfpqz) {
+  utterance ([g:GetPopularDrinks] what are some famous drinks)
+  plan (Y2BiUEkpKs3LTsxLAdOpRXpJmRVJlc75ydkliZk5xXouRZl52Qz6BFS5p5YE5BeU5iQWgdUXMzACIQMUA0kA)
+  last-modified (1559686481262)
+}

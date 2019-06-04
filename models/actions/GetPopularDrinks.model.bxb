@@ -1,0 +1,5 @@
+action (GetPopularDrinks) {
+  type (Search)
+  description (Get a list of popular drinks)
+  output (Drink)
+}

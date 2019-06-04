@@ -9,5 +9,10 @@ endpoints {
       accepted-inputs (personName)
       local-endpoint (getFavoriteDrink.js)
     }
+    
+    action-endpoint (GetPopularDrinks) {
+      accepted-inputs (personName)
+      local-endpoint (getPopularDrink.js)
+    }
   }
 }
