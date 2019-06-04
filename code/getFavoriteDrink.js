@@ -7,7 +7,7 @@ module.exports.function = function getFavoriteDrink (personName) {
   
   // if the person's name starts with something
   // do a specific query
-  if (personName.startsWith('julien')) {
+  if (personName.startsWith('juli')) {
     var response = http.getUrl('https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=17196', {
       format: 'json',
       cacheTime: 0
