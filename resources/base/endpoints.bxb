@@ -9,7 +9,7 @@ endpoints {
       accepted-inputs (personName)
       local-endpoint (getFavoriteDrink.js)
     }
-    
+
     action-endpoint (GetPopularDrinks) {
       local-endpoint (getPopularDrink.js)
     }
@@ -18,12 +18,12 @@ endpoints {
       accepted-inputs (drinkIngredient)
       local-endpoint (findDrinksByIngredient.js)
     }
-    
+
     action-endpoint (FindDrinksByMultipleIngredients) {
       accepted-inputs (drinkIngredients)
       local-endpoint (findDrinksByIngredients.js)
     }
-    
+
     action-endpoint (ReadInstruction) {
       accepted-inputs (drinkName)
       local-endpoint (findDrinkInstruction.js)     

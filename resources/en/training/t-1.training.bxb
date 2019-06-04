@@ -1,0 +1,5 @@
+train (t-1ftl9wtxdnkninfhemnzokh4j) {
+  utterance ("[g:GetFavoriteDrink] What is (Scott)[v:PersonName] favorite drink?")
+  plan (Y2BmMEopKs3LTsxLAdOpRXpJmRVJlc75ydkliZk5xXoBqUXF+XluiWX5RZklqS5FmXnZDPoE9LinlqBq0CTKEr/E3FQGJgZGIGYAkowMIADlAwA=)
+  last-modified (1559691586801)
+}
