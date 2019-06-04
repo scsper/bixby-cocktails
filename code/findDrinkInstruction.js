@@ -1,4 +1,4 @@
-module.exports.function = function findDrinks (drinkName) {
+module.exports.function = function findDrinkInstruction (drinkName) {
   drinkName = drinkName.toLowerCase()
   drinkName = drinkName.replace(/[ ]/g, '_')
 
@@ -9,5 +9,5 @@ module.exports.function = function findDrinks (drinkName) {
     format: 'json'
   })
   
-  return response.drinks.map(mungeDrinks)
+  return response.drinks.map(mungeDrinks)[0].instructions
 }

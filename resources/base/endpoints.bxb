@@ -18,5 +18,15 @@ endpoints {
       accepted-inputs (drinkIngredient)
       local-endpoint (findDrinksByIngredient.js)
     }
+    
+    action-endpoint (FindDrinksByMultipleIngredients) {
+      accepted-inputs (drinkIngredients)
+      local-endpoint (findDrinksByIngredients.js)
+    }
+    
+    action-endpoint (ReadInstruction) {
+      accepted-inputs (drinkName)
+      local-endpoint (findDrinkInstruction.js)     
+    }
   }
 }

@@ -1,0 +1,5 @@
+train (t-isogjvksdpr5ayjqxooio5pzm) {
+  utterance ("[g:FindDrinks] What's in a (Long Island Iced Tea)[v:DrinkName]?")
+  plan (Y2BmUEkpKs3LTsxLAdOpRXpJmRVJlc75ydkliZk5xXouRZl52QyaBFS5ZealgFUWM2gQY6BfYm4qAxMDIxAzAElGBhCA8gE=)
+  last-modified (1559687749164)
+}

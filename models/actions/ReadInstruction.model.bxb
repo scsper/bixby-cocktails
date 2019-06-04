@@ -1,0 +1,11 @@
+action (ReadInstruction) {
+  type(Search)
+  description (Get instructions)
+  collect {
+    input (drinkName) {
+      type (DrinkName)
+      min (Required) max (One)
+    }
+  }
+  output (DrinkIngredient)
+}

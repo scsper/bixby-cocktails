@@ -1,0 +1,11 @@
+action (FindDrinksByMultipleIngredients) {
+  type (Search)
+  description (Get me all ze drinks by multiple ingredients)
+  collect {
+    input (drinkIngredients) {
+      type (DrinkIngredient)
+      min (Required) max (Many)
+    }
+  }
+  output (Drink)
+}

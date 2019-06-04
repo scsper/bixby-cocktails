@@ -4,8 +4,8 @@ dialog (Result) {
   }
 
   if (size(drink) > 1) {
-    template ("I found these #{size(drink)} different drinks you can mix for #{value(drink.name)}")
+    template ("I found #{size(drink)} different drinks you can mix for #{value(drink.name)}")
   } else {
-    template ("Here's a drink you can mix")
+    template ("You can mix a #{value(drink.name)}")
   }
 }

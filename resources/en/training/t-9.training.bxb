@@ -1,0 +1,5 @@
+train (t-92e8prgfpwgw0ml50onye1yya) {
+  utterance ("[g:ReadInstruction] How do I make a (margarita)[v:DrinkName]?")
+  plan (Y2Bm0EspKs3LTsxLAdOpRXpJmRVJlc75ydkliZk5xXouRZl52Z556UWpKZmpeSUE1QelJqZ45hWXFJUml2Tm5zFoEGO+X2JuKgMTAyMQMwBJRgYQgPIB)
+  last-modified (1559688954727)
+}
