@@ -1,0 +1,5 @@
+vocab (DrinkName) {
+  "margarita"
+  "old fashioned"
+  "manhattan"
+}

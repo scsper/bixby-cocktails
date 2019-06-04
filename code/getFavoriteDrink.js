@@ -16,12 +16,57 @@ module.exports.function = function getFavoriteDrink (personName) {
     return response.drinks.map(mungeDrinks)
   }
   
-  if (personName.startsWith('scott')) {
+  if (personName.startsWith('scott') || personName.startsWith('andy') || personName.startsWith('joe')) {
     var response = http.getUrl('https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=11001', {
       format: 'json',
       cacheTime: 0
     })
     
+    return response.drinks.map(mungeDrinks)
+  }
+  
+  if (personName.startsWith('kelly')) {
+    var response = http.getUrl('https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=13621', {
+      format: 'json',
+      cacheTime: 0
+    })
+    
+    return response.drinks.map(mungeDrinks)
+  }
+  
+  if (personName.startsWith('adonis')) {
+    var response = http.getUrl('https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=11000', {
+      format: 'json',
+      cacheTime: 0
+    })
+    
+    return response.drinks.map(mungeDrinks)
+  }
+  
+  if (personName.startsWith('bruce')) {
+    var response = http.getUrl('https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=17266', {
+      format: 'json',
+      cacheTime: 0
+    })
+
+    return response.drinks.map(mungeDrinks)
+  }
+  
+  if (personName.startsWith('jennifer')) {
+    var response = http.getUrl('https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=11403', {
+      format: 'json',
+      cacheTime: 0
+    })
+
+    return response.drinks.map(mungeDrinks)
+  }
+  
+  if (personName.startsWith('brian')) {
+    var response = http.getUrl('https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=11009', {
+      format: 'json',
+      cacheTime: 0
+    })
+
     return response.drinks.map(mungeDrinks)
   }
   

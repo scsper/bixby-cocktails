@@ -1,0 +1,8 @@
+vocab (DrinkIngredient) {
+  "gin"
+  "vodka"
+  "tequila"
+  "whiskey"
+  "rum"
+  "vermouth"
+}

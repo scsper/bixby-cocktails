@@ -1,3 +1,3 @@
-text (DrinkIngredient) {
+name (DrinkIngredient) {
   description (An ingredient for our drink)
 }
