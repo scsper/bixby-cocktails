@@ -1,0 +1,25 @@
+result-view {
+  match: Drink (drink) {
+    from-output: FindDrinksByIngredient
+  }
+  
+  render {
+    if (size (drink) > 1) {
+      list-of (drink) {
+        has-details (true)
+      
+        where-each (item) {
+          layout-macro (drink-image-card) {
+            param (drink) {
+              expression (item)
+            }
+          }
+        }
+      }
+    } else {
+      layout-match (drink) {
+        mode (Details)
+      }  
+    }
+  }
+}

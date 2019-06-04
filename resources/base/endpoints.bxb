@@ -4,15 +4,19 @@ endpoints {
       accepted-inputs (drinkName)
       local-endpoint (findDrinks.js)
     }
-    
+
     action-endpoint (GetFavoriteDrink) {
       accepted-inputs (personName)
       local-endpoint (getFavoriteDrink.js)
     }
     
     action-endpoint (GetPopularDrinks) {
-      accepted-inputs (personName)
       local-endpoint (getPopularDrink.js)
+    }
+
+    action-endpoint (FindDrinksByIngredient) {
+      accepted-inputs (drinkIngredient)
+      local-endpoint (findDrinksByIngredient.js)
     }
   }
 }
