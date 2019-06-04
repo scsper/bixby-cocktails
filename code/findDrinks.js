@@ -1,4 +1,5 @@
 module.exports.function = function findDrinks (drinkName) {
+  drinkName = drinkName.toLowerCase()
   var http = require('http')
   var console = require('console')
   var response = http.getUrl('https://www.thecocktaildb.com/api/json/v2/8673533/search.php?s=' + drinkName, {

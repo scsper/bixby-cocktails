@@ -1,0 +1,5 @@
+train (t-swwp6w5y30wm8y9bmc4f75q5c) {
+  utterance ("[g:FindDrinks] What's in a (margarita)[v:DrinkName]")
+  plan (Y2BmUEkpKs3LTsxLAdOpRXpJmRVJlc75ydkliZk5xXouRZl52QyaBFS5ZealgFUWM2gQY6BfYm4qAxMDIxAzAElGBhCA8gE=)
+  last-modified (1559673851337)
+}
