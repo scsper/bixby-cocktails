@@ -1,0 +1,3 @@
+text (DrinkId) {
+  description (The id of a drink)
+}

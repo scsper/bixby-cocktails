@@ -1,0 +1,11 @@
+action (FindDrinks) {
+  type (Search)
+  description (Get me all ze drinks)
+  collect {
+    input (drinkName) {
+      type (DrinkName)
+      min (Required) max (One)
+    }
+  }
+  output (Drink)
+}

@@ -1,0 +1,23 @@
+structure (Drink) {
+  description (How we get drunk and drunker)
+  property (id) {
+    type (DrinkId)
+    min (Required) max (One)
+  }
+  property (name) {
+    type (DrinkName)
+    min (Required) max (One)
+  }
+  property (instructions) {
+    type (DrinkInstructions)
+    min (Required) max (One)
+  }
+  property (thumbnail) {
+    type (DrinkThumbnail)
+    min (Required) max (One)
+  }
+  property (ingredients) {
+    type (DrinkIngredients) 
+    min (Required) max (Many)
+  }
+}

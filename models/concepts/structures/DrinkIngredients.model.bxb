@@ -1,0 +1,11 @@
+structure (DrinkIngredients) {
+  description (The ingredients of our drink)
+  property (ingredient) {
+    type (DrinkIngredient)
+    min (Required) max (One)
+  }
+  property (measurement) {
+    type(DrinkMeasurement)
+    min (Optional) max (One)
+  }
+}
